@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/universal7870-common
+LOCAL_PATH := device/samsung/universal7570-common
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -214,10 +214,10 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.samsungexynos7870 \
+    fstab.samsungexynos7570 \
     init.baseband.rc \
-    init.samsungexynos7870.rc \
-    init.samsungexynos7870.usb.rc \
+    init.samsungexynos7570.rc \
+    init.samsungexynos7570.usb.rc \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc \
     wifi.rc \
@@ -293,4 +293,4 @@ PRODUCT_PACKAGES += \
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/universal7870-common/universal7870-common-vendor.mk)
+$(call inherit-product, vendor/samsung/universal7570-common/universal7570-common-vendor.mk)

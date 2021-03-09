@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 set -e
 
 VENDOR=samsung
-DEVICE=universal7870-common
+DEVICE=universal7570-common
 
 export INITIAL_COPYRIGHT_YEAR=2017
 
@@ -39,7 +39,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${AOSP_ROOT}"
 
 # Copyright headers and guards
-write_headers "universal7870-common"
+write_headers "universal7570-common"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

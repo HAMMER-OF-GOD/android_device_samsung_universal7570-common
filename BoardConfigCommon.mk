@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/universal7870-common
+LOCAL_PATH := device/samsung/universal7570-common
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -25,9 +25,9 @@ TARGET_NO_RADIOIMAGE := true
 
 # Platform
 BOARD_VENDOR := samsung
-TARGET_BOOTLOADER_BOARD_NAME := universal7870
+TARGET_BOOTLOADER_BOARD_NAME := universal7570
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_SOC := exynos7870
+TARGET_SOC := exynos7570
 
 # Architecture
 TARGET_ARCH := arm64
@@ -67,7 +67,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_LINUX_KERNEL_VERSION := 3.18
 
 # Kernel config
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos7570
 
 # HIDL
 DEVICE_MATRIX_FILE := $(LOCAL_PATH)/configs/compatibility_matrix.xml
