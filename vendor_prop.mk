@@ -40,11 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.location.osnlp.package=com.google.android.gms \
     ro.location.osnlp.region.package=""
 
-# Nfc
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.nfc.port=I2C \
-    ro.nfc.sec_hal=true
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.sib16_support=0 \
@@ -60,7 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=0 \
     ro.vendor.multisim.simslotcount=2
 
-#Treble
+# Treble
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.media.treble_omx=true
 
