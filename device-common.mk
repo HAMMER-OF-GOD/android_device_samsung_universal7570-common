@@ -219,6 +219,7 @@ PRODUCT_PACKAGES += \
     init.samsungexynos7570.usb.rc \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc \
+    init.vendor.onebinary.rc \
     wifi.rc \
     ueventd.rc
 

@@ -1,20 +1,22 @@
-# Android fstab file.
-#<src>                  <mnt_point>         <type>    <mnt_flags and options>                               <fs_mgr_flags>
-# The filesystem that contains the filesystem checker binary (typically /system) cannot
-# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+/system		ext4	/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM
+/system_image	emmc	/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM
+/data		ext4	/dev/block/platform/13540000.dwmmc0/by-name/USERDATA	flags=length=-20480,encryptable=footer
+/cache		ext4	/dev/block/platform/13540000.dwmmc0/by-name/CACHE
 
+/boot		emmc	/dev/block/platform/13540000.dwmmc0/by-name/BOOT	flags=backup=1;display="Kernel"
+/recovery	emmc	/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY	flags=backup=1;display="Recovery"
 
-/dev/block/platform/13540000.dwmmc0/by-name/BOOT      /boot      emmc      defaults                        defaults
-/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY  /recovery  emmc      defaults                        defaults
-/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM    /system    ext4      ro,errors=panic                                                                   wait,recoveryonly
-/dev/block/platform/13540000.dwmmc0/by-name/VENDOR    /vendor    ext4      ro,errors=panic                                                                   wait,recoveryonly
-/dev/block/platform/13540000.dwmmc0/by-name/CACHE	   /cache	  ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
-/dev/block/platform/13540000.dwmmc0/by-name/CACHE     /cache     f2fs      nosuid,nodev,noatime,rw,inline_xattr                                              wait,check,formattable
-/dev/block/platform/13540000.dwmmc0/by-name/USERDATA  /data      ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check,formattable,encryptable=footer,length=-16384
-/dev/block/platform/13540000.dwmmc0/by-name/USERDATA  /data      f2fs      nosuid,nodev,noatime,rw,inline_xattr                                              wait,check,formattable,encryptable=footer,length=-16384
-/dev/block/platform/13540000.dwmmc0/by-name/EFS		   /efs	     ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
-/dev/block/platform/13540000.dwmmc0/by-name/CPEFS     /cpefs     ext4      noatime,nosuid,nodev,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
+/modem		emmc	/dev/block/platform/13540000.dwmmc0/by-name/RADIO	flags=backup=1;display="Baseband"
+/efs		ext4	/dev/block/platform/13540000.dwmmc0/by-name/EFS		flags=backup=1;display="EFS
+/cpefs		emmc	/dev/block/platform/13540000.dwmmc0/by-name/CPEFS	flags=backup=1;display="CPEFS"
+/m9kefs		emmc	/dev/block/platform/13540000.dwmmc0/by-name/m9kefs1  	flags=backup=1
+/m9kefs2	emmc	/dev/block/platform/13540000.dwmmc0/by-name/m9kefs2  	flags=backup=1;subpartitionof=/m9kefs
+/m9kefs3	emmc	/dev/block/platform/13540000.dwmmc0/by-name/m9kefs3  	flags=backup=1;subpartitionof=/m9kefs
 
-# VOLD
-/devices/13560000.dwmmc2/mmc_host/mmc*                    auto        auto    defaults    voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/13600000.usb/13600000.dwc3/xhci-hcd.2.auto/usb*  auto        auto    defaults    voldmanaged=usb:auto
+/misc		emmc	/dev/block/platform/13540000.dwmmc0/by-name/MISC	flags=backup=0;display="Misc"
+/vendor		ext4	/dev/block/platform/13540000.dwmmc0/by-name/VENDOR
+/vendor_image	emmc	/dev/block/platform/13540000.dwmmc0/by-name/VENDOR
+/odm		ext4	/dev/block/platform/13540000.dwmmc0/by-name/ODM		flags=backup=1;display="Carrier Configs";flashimg
+
+/external_sd	auto	/dev/block/mmcblk1p1 /dev/block/mmcblk1			flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg	auto	/dev/block/sda1  /dev/block/sda				flags=display="USB-OTG";storage;wipeingui;removable
