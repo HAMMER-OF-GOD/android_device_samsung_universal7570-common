@@ -1,4 +1,0 @@
-# hal_sensors_default.te
-
-# cgroup tasks
-allow hal_sensors_default cgroup:file getattr;
