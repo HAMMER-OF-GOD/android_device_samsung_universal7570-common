@@ -246,10 +246,6 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.vendor_security_patch=2019-11-01
-
 # VNDK
 PRODUCT_PACKAGES += \
     libgui_vendor
