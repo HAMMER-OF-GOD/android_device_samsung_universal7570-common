@@ -1,5 +1,5 @@
 # Audio
-vendor/lib/audio.primary.universal7570.so
+vendor/lib/audio.primary.exynos7570.so
 vendor/lib/libaudio-ril.so
 vendor/lib/libaudioroute.so
 vendor/lib/libLifevibes_lvverx.so
@@ -8,11 +8,10 @@ vendor/lib/libpreprocessing_nxp.so
 vendor/lib/librecordalive.so
 vendor/lib/libsamsungDiamondVoice.so
 vendor/lib/libSamsungPostProcessConvertor.so
-vendor/lib/lib_SamsungRec_06006.so
+vendor/lib/lib_SamsungRec_06005.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
-vendor/lib/libtfa98xx.so
 vendor/lib/libtinyalsa.so
 vendor/lib/libvndsecril-client.so
 
@@ -45,10 +44,10 @@ vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 vendor/lib/egl/libGLES_mali.so
 
 # HWC
-vendor/bin/hw/android.hardware.graphics.composer@2.2-service
+vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/gralloc.exynos5.so
-vendor/lib/hw/hwcomposer.exynos5.so
+vendor/lib/hw/gralloc.exynos7570.so
+vendor/lib/hw/hwcomposer.exynos7570.so
 vendor/lib/libexynosdisplay.so
 vendor/lib/libexynosgscaler.so
 vendor/lib/libExynosHWCService.so
@@ -67,13 +66,12 @@ vendor/lib/libvirtualdisplay.so
 
 # Memtrack
 vendor/bin/hw/android.hardware.memtrack@1.0-service
-vendor/lib/hw/memtrack.exynos5.so
+vendor/lib/hw/memtrack.exynos7570.so
 
 # Media
 vendor/firmware/mfc_fw.bin
 
 # Misc
-vendor/bin/sswap
 vendor/lib/libcsc.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/libuniplugin.so
@@ -90,7 +88,6 @@ vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so
 vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so
 vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so
 vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so
-vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so
 vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so
 
 # RIL
@@ -111,9 +108,8 @@ vendor/lib/libsec-ril-dsds.so
 vendor/lib/libvndsecril-client.so
 vendor/lib/libvkmanager_vendor.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
-vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so
-vendor/lib/vendor.samsung.hardware.radio@2.0.so
-vendor/lib/vendor.samsung.hardware.radio@2.1.so
+vendor/lib/vendor.samsung.hardware.radio.channel@2.0_vendor.so
+vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@1.0-service
