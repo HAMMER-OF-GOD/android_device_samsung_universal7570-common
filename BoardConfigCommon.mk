@@ -66,7 +66,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_LINUX_KERNEL_VERSION := 3.18
 
 # Kernel config
-TARGET_KERNEL_SOURCE := kernel/samsung/exynos7570
+TARGET_KERNEL_SOURCE := kernel/samsung/universal7570
 
 # HIDL
 DEVICE_MATRIX_FILE := $(LOCAL_PATH)/configs/compatibility_matrix.xml
