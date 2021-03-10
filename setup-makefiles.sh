@@ -18,7 +18,7 @@
 set -e
 
 VENDOR=samsung
-DEVICE=universal7570-common
+DEVICE_COMMON=universal7570-common
 
 export INITIAL_COPYRIGHT_YEAR=2017
 
@@ -36,10 +36,10 @@ fi
 source "${HELPER}"
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${AOSP_ROOT}"
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Copyright headers and guards
-write_headers "universal7570-common"
+write_headers "j4lte"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
