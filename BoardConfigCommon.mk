@@ -15,6 +15,7 @@
 #
 
 LOCAL_PATH := device/samsung/universal7570-common
+BUILD_TOP := $(shell pwd)
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
