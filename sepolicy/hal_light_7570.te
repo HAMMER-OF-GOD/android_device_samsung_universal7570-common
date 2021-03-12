@@ -1,7 +1,0 @@
-type hal_light_7570, domain, coredomain;
-hal_server_domain(hal_light_7570, hal_light)
-
-type hal_light_7570_exec, exec_type, file_type;
-init_daemon_domain(hal_light_7570)
-
-allow hal_light_7570 sysfs:file rw_file_perms;
