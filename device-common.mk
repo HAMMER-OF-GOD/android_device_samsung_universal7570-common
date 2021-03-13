@@ -45,10 +45,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
 	$(LOCAL_PATH)/configs/permissions/com.samsung.permission.SSENSOR.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.samsung.permission.SSENSOR.xml
 
-# AdvancedDisplay
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
