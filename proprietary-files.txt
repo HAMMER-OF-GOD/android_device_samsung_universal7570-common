@@ -115,3 +115,27 @@ vendor/lib/vendor.samsung.hardware.radio@2.0_vendor.so
 vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/lib/libsensorlistener.so
 vendor/lib/libsensorndkbridge.so
+
+# TEEGRIS
+vendor/bin/tzdaemon
+vendor/lib/libuuid.so
+vendor/lib/libteecl.so
+
+# TEEGRIS firmware
+vendor/tee/00000000-0000-0000-0000-00000000dead
+vendor/tee/00000000-0000-0000-0000-000000534b4d
+vendor/tee/00000000-0000-0000-0000-0050524f4341
+vendor/tee/00000000-0000-0000-0000-00535453540a
+vendor/tee/00000000-0000-0000-0000-00535453540c
+vendor/tee/00000000-0000-0000-0000-0053545354ab
+vendor/tee/00000000-0000-0000-0000-00575644524d
+vendor/tee/00000000-0000-0000-0000-474154454b45
+vendor/tee/00000000-0000-0000-0000-4b45594d5354
+vendor/tee/00000000-0000-0000-0000-505256544545
+vendor/tee/00000000-0000-0000-0000-534543445256
+vendor/tee/00000000-0000-0000-0000-535355504341
+vendor/tee/00000000-0000-0000-0000-564c544b5052
+vendor/tee/driver/00000000-0000-0000-0000-000046495645
+vendor/tee/driver/00000000-0000-0000-0000-00535453540b
+vendor/tee/ffffffff-0000-0000-0000-000000000030
+vendor/tee/startup.tzar
